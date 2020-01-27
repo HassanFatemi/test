@@ -7,7 +7,7 @@ script:
   - docker images mannydesigns/node 
 
 before_deploy:
-  - docker login --username="smartdatasolutions" --password="#Dk122616053"
+  - docker login -u 'smartdatasolutions' -p '#Dk122616053'
 
 deploy:
   provider: script

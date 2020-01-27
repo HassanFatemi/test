@@ -7,7 +7,7 @@ script:
   - docker images mannydesigns/node 
 
 before_deploy:
-  - docker login -u hassan.fatemi@gmail.com -p #Dh122616053
+  - docker login -u smartdatasolutions -p #Dh122616053
 
 deploy:
   provider: script

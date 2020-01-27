@@ -3,14 +3,14 @@ services:
   - docker
 
 script:
-  - docker build -t HassanFatemi/node .
-  - docker images HassanFatemi/node 
+  - docker build -t smartdatasolutions/node .
+  - docker images smartdatasolutions/node 
 
 before_deploy:
   - docker login -u 'smartdatasolutions' -p '#Dk122616053'
 
 deploy:
   provider: script
-  script: docker push HassanFatemi/node
+  script: docker push smartdatasolutions/node
   on:
     branch: master
